@@ -1,0 +1,267 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --lightbluegrey : rgba(220,231,235,255);
+    --darkgrey : rgba(26,30,29,255);
+    --grey: rgba(45,52,51,255);
+    --bluegrey : rgba(178,191,194,255);
+    --whitegrey : rgb(203, 204, 204);
+    --lightgrey : rgba(203,204,204,255);
+}
+.container{
+    margin: 0;
+    padding: 0;
+}
+.cormor-font{
+    font-family: "cormorant garamond", serif;
+}
+.jost-font{
+            font-family: jost, sans-serif;
+            font-weight: 350;
+}
+.lightgrey{
+    background-color: rgba(203,204,204,255);
+}
+.darkgrey{
+    background-color: var(--darkgrey);
+}
+.grey {
+    background-color:var(--grey) ;
+}
+.bluegrey{
+    background-color:var(--bluegrey);
+}
+.lightbluegrey{
+    background-color: var(--lightbluegrey);
+}
+.bluegreytext{
+        color: var(--bluegrey);
+}
+.whitegreytext{
+        color: var(--whitegrey);
+    }
+.lightbluegreytext{
+    color: var(--lightbluegrey);
+}
+.darkgreytext{
+    color: var(--darkgrey);
+}
+
+    
+/* Header start */
+
+
+.navbar-toggler-icon{
+    display: none;
+}
+.hamburger{
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+ .hamburger:focus{
+    border: none;
+    box-shadow: none;
+ }
+.ham_line{
+    display: block;
+    background-color: rgb(255, 255, 255);
+    height: 1.8px;
+    width: 22px;
+    margin:6px;
+    border-radius: 15px;
+    transition: .2s ease-in;
+}
+.hamburger.active span:nth-child(1) {
+    transform: translate(0px,8px) rotate(45deg) ;
+}
+.hamburger.active span:nth-child(3) {
+    transform: translate(0px,-8px) rotate(-45deg) ;
+}
+
+.hamburger.active span:nth-child(2) {
+    transform: scale(0) ;
+}
+ .nav-item{
+    width: 100%;
+    text-align: center;
+    border-bottom:solid 1px rgb(163, 163, 163);
+    
+} 
+.header .nav-link{
+    font-size: 19px;
+}
+.header .nav-link:hover{
+    color: white;
+}
+.navbar-nav li:last-child{
+        border-bottom:none;    
+}
+/* Header end */
+
+
+
+/* hero start*/
+
+#mhead{
+    font-size: 42px;
+        color: rgb(252, 252, 252);
+    line-height: 1;
+}
+
+#herobtn{
+    width: 100%;
+}
+.mybtn{
+    font-size: 16px;
+    border-radius: 0;
+    background-color: var(--lightbluegrey);
+    border: solid 2px var(--lightbluegrey) ;
+
+}
+.mybtn:hover{
+    color: var(--lightbluegrey);
+    background-color: transparent;
+
+}
+/* hero end*/
+.sechead{
+    font-family: "cormorant garamond", serif;
+    font-weight: lighter;
+    font-size: 40px;
+}
+.txt{
+    font-family: jost ,sans-serif;
+    font-weight: 350;
+    font-size: 15px;
+}
+.divider{
+    opacity: 1;
+    border-top:solid var(--grey)  1px;
+    margin: 30px 0px;
+}
+.smallhead{
+    font-size: 30px;
+}
+.bullets{
+    padding: 20px;
+}
+img{
+        object-fit: cover;
+}
+
+.contact-form input{
+    border-radius: 0;
+    border: solid 1px;
+    background-color: transparent;
+}
+.contact-form button{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    width: 100%;
+    background-color: var(--darkgrey);
+    color:var(--lightgrey) ;
+    border: solid 1px var(--darkgrey);
+}
+.contact-form button:hover{
+    color: var(--darkgrey);
+    background-color: transparent;
+}
+.contact-form input:focus{
+    background-color: transparent;
+    border: solid 1px var(--darkgrey);
+        box-shadow: none;
+}
+.fa-brands:hover{
+    color:var(--grey) ;
+}
+
+
+
+@media (min-width: 576px) {
+        .nav-item{
+        width: auto;
+        border-bottom:none;
+    }
+    #mhead{
+            padding: 30px 0px 30px 0px;
+
+    }
+    #mybtn{
+            justify-content: center;
+
+    }
+}
+
+
+
+@media (min-width: 768px) {
+    #herobtn{
+        width: 50%;
+        justify-content: center;
+    }
+    .mybtn{
+        margin-top: -400px;
+    }
+
+    #mhead{
+        padding: 50px 0px 50px 0px;
+    }
+    img{
+    height: 650px;
+    width: 100%;    
+    }
+    .hero{
+    margin-bottom: -25px;
+    }
+    .offer{
+    margin: 0px 70px;
+    }
+   .offer .sechead{
+    margin-bottom: 80px;
+   }
+   .sechead{
+   font-size: 50px;
+   }
+   .subhead{
+    padding: 20px 0px;
+    font-size: 25px;
+   }
+
+   .bullets{
+    padding: 50px 80px;
+   }
+   .whyus{
+    font-size: 50px;
+    padding: 20px 0px;
+   }
+   .txt{
+    font-size: 18px;
+   }
+   .smallhead{
+    font-size: 25px;
+}
+.contact-form{
+    padding: 100px 200px;
+}
+
+}
+
+
+@media (min-width: 992px) {
+            #mybtn{
+        height: 200px;
+        margin-top: -200px;
+    justify-content: center;
+}
+
+#mhead{
+    font-size: 55px;
+    padding: 100px;
+}
+
+}
