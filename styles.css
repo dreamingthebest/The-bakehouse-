@@ -5,7 +5,7 @@
 }
 :root{
     --lightbluegrey : rgba(220,231,235,255);
-    --darkgrey : rgba(26,30,29,255);
+    --darkgrey : rgb(26,30,29);
     --grey: rgba(45,52,51,255);
     --bluegrey : rgba(178,191,194,255);
     --whitegrey : rgb(203, 204, 204);
@@ -215,6 +215,12 @@ img{
     height: 650px;
     width: 100%;    
     }
+    #about-content img {
+        height: 400px;
+    }
+    #contact-content img{
+        height: 500px;
+    }
     .hero{
     margin-bottom: -25px;
     }
@@ -245,8 +251,8 @@ img{
    .smallhead{
     font-size: 25px;
 }
-.contact-form{
-    padding: 100px 200px;
+#home-content .contact-form{
+    padding: 50px 100px;
 }
 
 }
@@ -263,5 +269,16 @@ img{
     font-size: 55px;
     padding: 100px;
 }
+#about-content img {
+        height: 800px;
+    }
+    .contact-form img{
+        height: 600px;
+    }
+}
 
+@media (min-width: 1200) {
+#home-content .contact-form{
+    padding: 100px 200px;
+}
 }
